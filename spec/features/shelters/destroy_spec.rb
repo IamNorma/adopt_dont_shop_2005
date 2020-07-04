@@ -24,7 +24,7 @@ RSpec.describe "Delete individual shelter" do
 
     click_on "Delete Shelter"
 
-    expect(current_path).to eq("/shelters/index")
+    expect(current_path).to eq("/shelters")
 
     expect(page).to_not have_content("Southeast Denver Pet Shelter")
   end
