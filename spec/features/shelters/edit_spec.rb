@@ -16,6 +16,10 @@ RSpec.describe 'edit shelter' do
     expect(current_path).to eq("/shelters/#{shelter_1.id}/edit")
 
     fill_in :name, with: "North Denver Pet Shelter"
+    fill_in :address, with: "12345 North Rd"
+    fill_in :city, with: "Denver"
+    fill_in :state, with: "Colorado"
+    fill_in :zip, with: 80002
 
     click_on "Update Shelter"
 
