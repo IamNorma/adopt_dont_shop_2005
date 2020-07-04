@@ -5,4 +5,4 @@
 <p>State: <%= @shelter.state %></p>
 <p>Zip: <%= @shelter.zip %></p>
 
-<%= link_to "Delete Shelter" %>
+<%= link_to "Delete Shelter", "/shelters/#{@shelter.id}", method: :delete %>
