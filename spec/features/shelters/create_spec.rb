@@ -11,6 +11,10 @@ RSpec.describe 'create a new shelter' do
     expect(current_path).to eq('/shelters/new')
 
     fill_in :name, with: "Arvada Pet Shelter"
+    fill_in :address, with: "24444 E Evans"
+    fill_in :city, with: "Arvada"
+    fill_in :state, with: "Colorado"
+    fill_in :zip, with: 89235
 
     click_on 'Create Shelter'
 
