@@ -16,6 +16,11 @@ class SheltersController < ApplicationController
     @shelter = Shelter.find(params[:id])
   end
 
+  def update
+    shelter = Shelter.find(params[:id])
+    shelter.update(shelter_params)
+    redirect_to '/shelters'
+  end
   private
 
   def shelter_params
