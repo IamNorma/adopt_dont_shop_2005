@@ -1,0 +1,10 @@
+<h1>Available For Adoption From <%= @shelter.name %> </h1>
+
+<br><br>
+
+<% @adoptable_pets.each do |pet| %>
+  <p><%= image_tag pet.image %></p>
+  <h2><%= pet.name %></h2>
+  <p><%= pet.approximate_age %></p>
+  <p><%= pet.sex %></p>
+<% end %>
