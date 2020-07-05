@@ -18,9 +18,9 @@ RSpec.describe "page for individual pet" do
     visit "/pets/#{pet_1.id}"
 
     expect(page).to have_content(pet_1.name)
-    expect(page).to have_contetn(pet_1.description)
-    expect(page).to have_contetn(pet_1.approximate_age)
-    expect(page).to have_contetn(pet_1.sex)
-    expect(page).to have_contetn(pet_1.adoption_status)
+    expect(page).to have_content(pet_1.description)
+    expect(page).to have_content(pet_1.approximate_age)
+    expect(page).to have_content(pet_1.sex)
+    expect(page).to have_content(pet_1.adoption_status)
   end
 end
