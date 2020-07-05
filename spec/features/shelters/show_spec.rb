@@ -1,3 +1,5 @@
+require 'rails_helper'
+
 RSpec.describe "page for individual shelter", type: :feature do
   it "can show individual shelter name and full address info" do
     shelter_1 = Shelter.create(name: "Southeast Denver Pet Shelter",
@@ -14,4 +16,4 @@ RSpec.describe "page for individual shelter", type: :feature do
     expect(page).to have_content(shelter_1.state)
     expect(page).to have_content(shelter_1.zip)
   end
-end 
+end
