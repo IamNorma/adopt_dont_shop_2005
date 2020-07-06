@@ -4,6 +4,8 @@
   <h2><%= shelter.name %></h2>
   <%= link_to "Visit This Shelter", "/shelters/#{shelter.id}" %>
   <%= link_to "Update Shelter", "/shelters/#{shelter.id}/edit" %>
+  <%= link_to "Delete This Shelter", "/shelters/#{shelter.id}", method: :delete %>
+
   <br><br>
 <% end %>
 <br><br><br><br><br>
